@@ -225,72 +225,11 @@ The Development Team, along with Scrum Master will conduct a quick briefing (usu
 
 Even though the presence of Product Owner is not needed nor required, it is considered a good thing to keep the final decider within the loop.
 
-When executing the **first sprint** in its daily scrum, the software division at TUKU noted the following:
-```
-Day 1 _____________________________________________________
-
-Yesterday: 
-   - undefined.
-
-Today's tasks:
-   - make a skeleton interface to place a pick-up request, considering the ability to input package type (fragile/food/etc.) and choose between available pick-up times
-   - designate the initial function/controller/interface as the definitive reference for coding practices
-   - start working and asking the relevant individual in charge of the function to calculate the shipping fare
-
-Challenge/blocker: 
-   - undefined.
-
-Day 2 _____________________________________________________
-
-Yesterday:
-   - make a skeleton interface to place a pick-up request, considering the ability to input package type (fragile/food/etc.) and choose between available pick-up times
-   - designate the initial function/controller/interface as the definitive reference for coding practices
-   - start working and asking the relevant individual in charge of the function to calculate the shipping fare 
-
-Today's tasks:
-   - refine and enhance the visual aesthetics of the user interface.
-   - continue working on the function to calculate the shipping fare
-
-Challenge/blocker: 
-   - undefined.
-
-Day 3 _____________________________________________________
-
-Yesterday:
-   - refine and enhance the visual aesthetics of the user interface.
-   - continue working on the function to calculate the shipping fare
-
-Today's tasks:
-   - finalize and test the function to calculate the shipping fare
-
-Challenge/blocker: 
-   - undefined.
-
-Day 4 _____________________________________________________
-
-Yesterday:
-   - finalize and test the function to calculate the shipping fare
-
-Today's tasks:
-   - continue finalize and test the function to calculate the shipping fare
-
-Challenge/blocker: 
-   - yesterday, an issue occurred on the server which resulted in the app experiencing an "unusual" bug.
-
-
-<!-- End of note -->
-```
 
 #### 2.	The “ToDo” Board
 
 A Sprint Backlog holds many key points that needed to be done within a sprint. However, it does not specify the required actions to finish each backlog.  Therefore, there needs to be a “ToDo” board, on which the team members can break a sprint backlog down into little steps, that ultimately accomplish the backlog on the bigger picture.
 
-Example of updating the “ToDo” board in day 2 of the first sprint:
-- Add an element to capture the pick-up location
-- Add an element to capture the pick-up time
-- Add an element to capture the type of package
-- Add a function where it calculates the end fare
-- Add a validation function for the captured information
 
 #### 3.	Sprint Review
 
@@ -303,16 +242,96 @@ At the closing mark for each sprint, the team will be doing a Sprint Review. Thi
 Below are things that typically happen during a sprint review:
 
 - Product Backlog Refinement/Grooming
-\
 Once a sprint gets a backlog item done or two, it usually is a good idea to refine the Product Backlog based on the insights recieved during the sprint.
 
 - Sprint Goals Review
-\
 The team need to discuss: whether the sprint that they’re on have accomplished all their goals. If not, then this activity serve to raise awareness that something did not go according to plan, and has to be revisited again sometime in the future (probably in the next sprint planning activity).
+
 
 #### 4.	Sprint Retrospective
 
 This activity occur during the closing mark of a sprint, and right after the Sprint Review. Its main purpose is to allow for the team to reflect on their previous sprint, and identify in which case can they improve on. Generally, when they find an activity worth improving, they’re going to plan things differently.
 
 The difference between a Sprint Review and a Sprint Retrospective is that Review focuses on the product – while Retrospective focuses on the sprint process itself.
+\
+\
+\
+During the ***first sprint***, the following was done:
 
+**Day 1**
+- The team did not execute a `daily scrum`, due to the `sprint planning` activity having rehearsed everything that needed to be done that day.
+- The following were added to the ToDo board:
+	- make a skeleton interface to place a pick-up request, considering the ability to input package type (fragile/food/etc.) and choose between available pick-up times 
+	- sketch the interface based on the skeleton
+	- start working and asking the relevant individual in charge of the function to calculate the shipping fare
+
+**Day 2**
+- The team held a daily scrum at 08:15 in the morning, talked about:
+	- what had been acomplished yesterday?
+		- ![skeleton interface](https://i.ibb.co/RCZq86C/PAGE-SKELETON.png)
+		- The function to calculate the shipping fare was made.
+	- what to do today?
+		- code the user interface.
+		- continue working on the function to calculate the shipping fare
+	- any obstacle?
+		- no.
+- The following were added to the ToDo board:
+	- code the user interface.
+	- continue working on the function to calculate the shipping fare
+
+**Day 3**
+- The team held a daily scrum at 08:30 in the morning, due to a team member having to go to the bathroom. Talked about:
+	- what had been accomplished yesterday?
+		- coded the user interface:
+		 ![enter image description here](https://i.ibb.co/fFtbjsk/CODED-INTERFACE.png)
+		- made a function that calculates the shipping price
+	- what to do today?
+		- add the functionality to the coded interface
+	- any obstacle?
+		- no.
+- The following were added to the ToDo board:
+	- add the functionality to the coded interface (like the map should open a map pop-up that selects a location to be submitted to a form)
+
+**Day 4**
+-  The team held a daily scrum at 08:15 in the morning. Talked about:
+	- what had been accomplished yesterday?
+		- added the functionality to the coded interface
+		 ![functional coded interface](https://i.ibb.co/6FFC4TG/FUNCTIONAL-CODED-INTERFACE-WITHOUT-PRICE.png)
+	- what to do today?
+		- integrate the fare counting function to the interface
+		- test the interface for defects
+	- any obstacle?
+		- no.
+- The following were added to the ToDo board:
+	- integrate the fare counting function to the interface
+	- test the integrated interface for defects
+
+**Day 5**
+-  The team held a daily scrum at 08:15 in the morning. Talked about:
+	- what had been accomplished yesterday?
+		- successfully integrated the fare counting function to the interface
+		 ![functional coded interface](https://i.ibb.co/wN0fFPx/FUNCTIONAL-CODED-INTERFACE.png)
+		 - tested the interface
+	- what to do today?
+		- fix the misbehaving function
+	- any obstacle?
+		- there are a defect in the fare-calculating function. it cannot break down factors influencing the fare.
+- The following were added to the ToDo board:
+	- fix the misbehaving function
+- Executed the Sprint Review activity:
+	- this sprint has somewhat achieved its objective: that being put together the very basic functionality for the TUKU app:
+		- this sprint has made the application to accurately show the end-fare in a pick-up request
+		- this sprint has not been able to break down the fare displayed: hint about a flaw in the logic of a function.
+	- groomed the product backlog:
+		- due to the application not being able to show the correct break down of the fare, a backlog item was modified to be "Fix the fare calculating function to show the correct break down of the shipping fare"; rather than "Each pick-up request has to be able to show its fare, and how it is broken down".
+- Executed the Sprint Retrospective activity:
+	- Due to everything being well in the sprint process itself, there are no suggestion raised during the activity.
+
+
+
+**<!-- End of sprint 1 --\>**
+
+**Snapshots of sprint 2:**
+![onboarding request making](https://i.ibb.co/zxDFpfH/onboarding-request-tutorial.png)
+
+![Onboarding order tracking](https://i.ibb.co/nnnwtxR/onboarding-track.png)
